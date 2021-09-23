@@ -1,3 +1,5 @@
+{% import "macros.html" as macros %}
+
 {% extends "index.html" %}
 
 {% block content %}
@@ -5,7 +7,7 @@
 
 <ul>
 {% for page in section.pages %}
-    <li><a href="{{ page.permalink }}">{{ page.title }}</a></li>
+    <li><a href="{{ page.permalink }}">{{ page.title }}</a> - {{ macros::taglist(tags=page.taxonomies.tags) }}</li>
 {% endfor %}
 </ul>
 

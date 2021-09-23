@@ -1,11 +1,15 @@
+{% import "macros.html" as macros %}
+
 {% extends "index.html" %}
 
 {% block content %}
 <h1>{{ page.title }}</h1>
 
+{{ macros::taglist(tags=page.taxonomies.tags) }}
+
 {{ page.content | safe }}
 
-<!-- <pre>
+<pre>
     {{ page | json_encode(pretty=true) | safe }}
-</pre> -->
+</pre>
 {% endblock content %}

@@ -1,0 +1,15 @@
+{% extends "index.html" %}
+
+{% block content %}
+<h1>Tags</h1>
+
+<ul>
+{% for tag in terms %}
+    <li><a href="{{ tag.path }}">{{ tag.name }}</a></li>
+{% endfor %}
+</ul>
+
+<!-- <pre>
+    {{ terms | json_encode(pretty=true) | safe }}
+</pre> -->
+{% endblock content %}
