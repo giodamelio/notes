@@ -39,3 +39,10 @@ a.tag {
         filter: brightness(100%);
     }
 }
+
+// Add an icon next to external links
+a[rel=noopener]:after {
+    display: inline-block;
+    margin-left: 2px;
+    content: url(/images/external-link.svg)
+}

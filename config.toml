@@ -16,5 +16,9 @@ taxonomies = [
 # Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
 highlight_code = true
 
+# Configure external links
+external_links_target_blank = true
+external_links_no_referrer = false
+
 [extra]
 # Put all your custom variables here
