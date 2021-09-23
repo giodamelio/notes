@@ -1,0 +1,13 @@
+{% extends "index.html" %}
+
+{% block content %}
+<h1>Gio's Field Notes</h1>
+
+{% set notes = get_section(path="notes/_index.md") %}
+<p>There are {{ notes.pages | length }} <a href="{{ notes.permalink }}">notes</a>.</p>
+
+<!-- <pre>
+    {{ get_section(path="notes/_index.md") | json_encode(pretty=true) }}
+    {{ section | json_encode(pretty=true) | safe }}
+</pre> -->
+{% endblock content %}
