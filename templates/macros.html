@@ -1,6 +1,6 @@
 {% macro taglist(tags) %}
 {% for tag in tags %}
-<a href="{{ get_taxonomy_url(kind='tags', name=tag) }}">
+<a href="{{ get_taxonomy_url(kind='tags', name=tag) }}" class="tag">
     #{{ tag }}
 </a>
 {% endfor %}

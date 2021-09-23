@@ -1,34 +1,20 @@
 // Define our colors
-:root {
-    --background-color: #212a2e;
-    --text-color: #F7F8F8;
-    --link-color: #828fff;
-}
-
-html[data-theme='light'] {
-    --background-color: #fff;
-    --text-color: #121416d8;
-    --link-color: #543fd7;
-}
-
-html[data-theme='dark'] {
-    --background-color: #212a2e;
-    --text-color: #F7F8F8;
-    --link-color: #828fff;
-}
+$background-color: #24283b;
+$darker-background-color: #1a1b26;
+$text-color: #F7F8F8;
+$link-color: #F7F8F8;
 
 // Color some things
 body {
-    background: var(--background-color);
-    color: var(--text-color);
+    background: $background-color;
+    color: $text-color;
 }
 
 a {
-    color: var(--link-color);
+    color: $link-color;
 }
 
 a:hover {
-    text-decoration: underline;
     filter: brightness(80%);
 }
 
@@ -36,4 +22,20 @@ a:hover {
 .content {
     max-width: 1280px;
     margin: auto;
+}
+
+a.tag {
+    text-decoration: none;
+    color: $text-color;
+    background-color: $darker-background-color;
+    padding: 3px 6px 3px 6px;
+    border-radius: 6px;
+    margin-left: 3px;
+    margin-right: 3px;
+    font-size: 0.8em;
+
+    :hover {
+        text-decoration: none;
+        filter: brightness(100%);
+    }
 }
