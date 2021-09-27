@@ -1,4 +1,4 @@
-# fieldnotes
+# notes
 Notes to my future self
 
 ## TODOs

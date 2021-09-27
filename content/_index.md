@@ -1,4 +1,4 @@
 +++
-title = "Gio's Field Notes"
+title = "Gio's Notes"
 template = "home.html"
 +++
