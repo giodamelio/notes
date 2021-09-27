@@ -5,11 +5,11 @@
 
 <ul>
 {% for tag in terms %}
-    <li><a href="{{ tag.path }}">{{ tag.name }}</a></li>
+    <li><a href="{{ tag.path }}" class="tag">#{{ tag.name }}</a> ({{ tag.pages | length }} note)</li>
 {% endfor %}
 </ul>
 
-<!-- <pre>
+{# <pre>
     {{ terms | json_encode(pretty=true) | safe }}
-</pre> -->
+</pre> #}
 {% endblock content %}
