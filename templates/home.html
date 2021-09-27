@@ -3,6 +3,15 @@
 {% block content %}
 <h1>Gio's Field Notes</h1>
 
+<!-- Search interface for the notes -->
+<link rel="stylesheet" href="https://files.stork-search.net/dark.css" />
+<input data-stork="notes" style="width: 100%; font-size: 20pt" />
+<div data-stork="notes-output"></div>
+<script src="https://files.stork-search.net/stork.js"></script>
+<script>
+    stork.register("notes", "/notes.st");
+</script>
+
 {% set notes = get_section(path="notes/_index.md") %}
 <p>There are {{ notes.pages | length }} <a href="{{ notes.permalink }}">notes</a>.</p>
 
