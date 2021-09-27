@@ -1,0 +1,9 @@
+[input]
+base_directory = "content/"
+
+{% set notes = get_section(path="notes/_index.md") %}
+files = [
+{% for page in notes.pages %}
+  { path = "{{ page.relative_path | safe }}", url = "{{ page.path | safe }}", title = "{{ page.title }}" },
+{% endfor %}
+]
