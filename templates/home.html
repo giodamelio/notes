@@ -12,8 +12,13 @@
     stork.register("notes", "/notes.st");
 </script>
 
+<!-- List the number of notes and tags -->
 {% set notes = get_section(path="notes/_index.md") %}
-<p>There are {{ notes.pages | length }} <a href="{{ notes.permalink }}">notes</a>.</p>
+{% set tags = get_taxonomy(kind="tags") %}
+<p>
+    There are {{ notes.pages | length }} <a href="{{ notes.permalink }}">notes</a> and
+     {{ tags.items | length }} <a href="{{ tags.permalink }}">tags</a>.
+</p>
 
 <!-- <pre>
     {{ get_section(path="notes/_index.md") | json_encode(pretty=true) }}
