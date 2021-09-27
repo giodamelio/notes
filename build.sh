@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 zola build
-rustup default stable
-cargo install --git https://github.com/giodamelio/stork --branch hacked-toml-frontmatter
-stork build --input public/stork.toml/index.html --output public/notes.st
+curl -L https://github.com/giodamelio/stork/releases/download/v10000.0.0/stork-ubuntu-20-04 -o stork
+chmod +x stork
+./stork build --input public/stork.toml/index.html --output public/notes.st
