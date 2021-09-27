@@ -1,6 +1,8 @@
 # The URL the site will be built for
 base_url = "https://notes.giodamelio.com"
 
+title = "Gio's Notes"
+
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
 

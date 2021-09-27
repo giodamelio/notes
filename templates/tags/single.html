@@ -1,5 +1,9 @@
 {% extends "index.html" %}
 
+{% block title %}
+{{ super() }} | #{{ term.name }}
+{% endblock title %}
+
 {% block content %}
 <h1>Notes tagged "{{ term.name }}"</h1>
 
