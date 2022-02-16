@@ -46,3 +46,11 @@ a[rel=noopener]:after {
     margin-left: 2px;
     content: url(/images/external-link.svg)
 }
+
+// Add padding for the grid columns
+.pure-g > div {
+    box-sizing: border-box;
+}
+.l-box {
+    padding: 0 1em;
+}
