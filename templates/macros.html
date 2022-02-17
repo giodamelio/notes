@@ -5,3 +5,13 @@
 </a>
 {% endfor %}
 {% endmacro %}
+
+{% macro searchbar() %}
+<link rel="stylesheet" href="https://files.stork-search.net/dark.css" />
+<input data-stork="notes" placeholder="Search..." style="width: 100%; font-size: 20pt" />
+<div data-stork="notes-output"></div>
+<script src="https://files.stork-search.net/stork.js"></script>
+<script>
+    stork.register("notes", "/notes.st");
+</script>
+{% endmacro %}
