@@ -6,6 +6,10 @@
 {{ super() }} | {{ page.title }}
 {% endblock title %}
 
+{% block menubar %}
+{{ macros::searchbar(style="") }}
+{% endblock menubar %}
+
 {% block content %}
 <h1>{{ page.title }}</h1>
 
