@@ -1,6 +1,6 @@
 +++
 title = "SSH Port Forwarding"
-date = "2025-11-22T00:00:00-00:00"
+date = "2025-11-22T00:00:00-06:00"
 
 [taxonomies]
 tags = ["ssh", "port-forwarding", "tunneling", "networking", "cli"]
